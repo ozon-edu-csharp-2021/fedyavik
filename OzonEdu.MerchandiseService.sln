@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{30AB72F2-1236-4FFC-9D9D-EB321BD91210}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{CFF9C878-7607-4926-9710-671F4303DFEB}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	dockerfile = dockerfile
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1A790F47-3AFE-4AA7-87B0-B3CCF9CE5674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OzonEdu.MerchandiseService", "src\OzonEdu.MerchandiseService\OzonEdu.MerchandiseService.csproj", "{DBA43F5B-9BDD-4546-8036-994A205C1734}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBA43F5B-9BDD-4546-8036-994A205C1734} = {30AB72F2-1236-4FFC-9D9D-EB321BD91210}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBA43F5B-9BDD-4546-8036-994A205C1734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA43F5B-9BDD-4546-8036-994A205C1734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA43F5B-9BDD-4546-8036-994A205C1734}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
