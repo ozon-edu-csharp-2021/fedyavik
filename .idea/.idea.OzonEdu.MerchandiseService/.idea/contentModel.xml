@@ -14,7 +14,35 @@
           <e p="appsettings.json" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="Controllers" t="Include">
-            <e p="WeatherForecastController.cs" t="Include" />
+            <e p="MerchController.cs" t="Include" />
+          </e>
+          <e p="GrpcServices" t="Include">
+            <e p="MerchandiseGrpcSerivce.cs" t="Include" />
+          </e>
+          <e p="Infrastructure" t="Include">
+            <e p="Extensions" t="Include">
+              <e p="HostBuilderExtensions.cs" t="Include" />
+            </e>
+            <e p="Filters" t="Include">
+              <e p="GlobalExceptionFilter.cs" t="Include" />
+            </e>
+            <e p="Interceptors" t="Include">
+              <e p="LoggingInterceptor.cs" t="Include" />
+            </e>
+            <e p="Middlewares" t="Include">
+              <e p="LiveMiddleware.cs" t="Include" />
+              <e p="ReadyMiddleware.cs" t="Include" />
+              <e p="RequestLoggingMiddleware.cs" t="Include" />
+              <e p="ResponseLoggingMiddleware.cs" t="Include" />
+              <e p="VersionMiddleware.cs" t="Include" />
+            </e>
+            <e p="StartupFilters" t="Include">
+              <e p="SwaggerStartupFilter.cs" t="Include" />
+              <e p="TerminalStartupFilter.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Models" t="Include">
+            <e p="RequestMerchModel.cs" t="Include" />
           </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
@@ -28,8 +56,64 @@
           <e p="Properties" t="Include">
             <e p="launchSettings.json" t="Include" />
           </e>
+          <e p="Services" t="Include">
+            <e p="Interfaces" t="Include">
+              <e p="IMerchService.cs" t="Include" />
+            </e>
+            <e p="MerchService.cs" t="Include" />
+          </e>
           <e p="Startup.cs" t="Include" />
-          <e p="WeatherForecast.cs" t="Include" />
+        </e>
+        <e p="OzonEdu.MerchandiseService.Grpc" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="merchandise-service.proto" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="Merchandise-serviceGrpc.cs" t="Include" />
+                <e p="MerchandiseService.cs" t="Include" />
+                <e p="OzonEdu.MerchandiseService.Grpc.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.Grpc.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="OzonEdu.MerchandiseService.GrpcClient" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="OzonEdu.MerchandiseService.GrpcClient.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.GrpcClient.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+        </e>
+        <e p="OzonEdu.MerchandiseService.HttpClients" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="MerchHttpClient.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="OzonEdu.MerchandiseService.HttpClients.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.HttpClients.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="OzonEdu.MerchandiseService.HttpModels" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="OzonEdu.MerchandiseService.HttpModels.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.HttpModels.csproj" t="IncludeRecursive" />
+          <e p="RequestMerchPostViewModel.cs" t="Include" />
+          <e p="RequsetMerchResponce.cs" t="Include" />
         </e>
       </e>
       <e p="tests" t="Include" />
