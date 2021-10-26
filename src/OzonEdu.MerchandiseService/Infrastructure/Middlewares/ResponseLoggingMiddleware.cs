@@ -9,9 +9,9 @@ namespace OzonEdu.MerchandiseService.Configuration.Middlewares
     public class ResponseLoggingMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly ILogger<RequestLoggingMiddleware> _logger;
+        private readonly ILogger<ResponseLoggingMiddleware> _logger;
         private const string grpcContentType = "application/grpc";
-        public ResponseLoggingMiddleware(RequestDelegate next, ILogger<RequestLoggingMiddleware> logger)
+        public ResponseLoggingMiddleware(RequestDelegate next, ILogger<ResponseLoggingMiddleware> logger)
         {
             _next = next;
             _logger = logger;

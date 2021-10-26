@@ -10,17 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4845c9b-bb1c-40c9-b994-924626b0f237" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpClients/OzonEdu.MerchandiseService.HttpClients.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/OzonEdu.MerchandiseService.HttpModels.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +204,7 @@
       <workItem from="1635242267471" duration="1790000" />
       <workItem from="1635244087282" duration="1781000" />
       <workItem from="1635245905851" duration="1769000" />
-      <workItem from="1635247716616" duration="603000" />
+      <workItem from="1635247716616" duration="1064000" />
     </task>
     <servers />
   </component>
@@ -502,10 +492,10 @@
           <line>31</line>
           <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Infrastructure\Middlewares\ResponseLoggingMiddleware.cs" initialLine="29">
             <startOffsets>
-              <option value="987" />
+              <option value="989" />
             </startOffsets>
             <endOffsets>
-              <option value="1029" />
+              <option value="1031" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
