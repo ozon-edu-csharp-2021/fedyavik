@@ -2,7 +2,7 @@
 
 WORKDIR /src
 
-COPY ["src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj", "src/OzonEdu.MerchandiseService/"]
+COPY ["OzonEdu.MerchandiseService.csproj", "src/OzonEdu.MerchandiseService/"]
 
 RUN dotnet restore "src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj"
 

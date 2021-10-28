@@ -4,8 +4,9 @@
     <e p="C:\NOA\Route 256\OzonEdu.MerchandiseService" t="IncludeFlat">
       <e p=".gitignore" t="Include" />
       <e p="common" t="Include" />
-      <e p="docker-compose.yml" t="Include" />
-      <e p="dockerfile" t="Include" />
+      <e p="deploy" t="Include">
+        <e p="docker-compose.yml" t="Include" />
+      </e>
       <e p="OzonEdu.MerchandiseService.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="src" t="Include">
@@ -16,6 +17,7 @@
           <e p="Controllers" t="Include">
             <e p="MerchController.cs" t="Include" />
           </e>
+          <e p="dockerfile" t="Include" />
           <e p="GrpcServices" t="Include">
             <e p="MerchandiseGrpcSerivce.cs" t="Include" />
           </e>
@@ -40,9 +42,6 @@
               <e p="SwaggerStartupFilter.cs" t="Include" />
               <e p="TerminalStartupFilter.cs" t="Include" />
             </e>
-          </e>
-          <e p="Models" t="Include">
-            <e p="RequestMerchModel.cs" t="Include" />
           </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
@@ -112,6 +111,7 @@
             </e>
           </e>
           <e p="OzonEdu.MerchandiseService.HttpModels.csproj" t="IncludeRecursive" />
+          <e p="RequestMerchModel.cs" t="Include" />
           <e p="RequestMerchPostViewModel.cs" t="Include" />
           <e p="RequsetMerchResponce.cs" t="Include" />
         </e>

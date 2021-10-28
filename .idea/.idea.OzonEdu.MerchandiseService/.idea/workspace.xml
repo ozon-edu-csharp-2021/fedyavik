@@ -10,7 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4845c9b-bb1c-40c9-b994-924626b0f237" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Models/RequestMerchModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/RequestMerchModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +71,6 @@
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/GrpcServices/MerchandiseSerivceGrpc.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Grpc/merchandise-service.proto" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.GrpcClient/OzonEdu.MerchandiseService.GrpcClient.csproj" />
-        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Extensions/HostBuilderExtensions.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Program.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Properties/launchSettings.json" />
@@ -76,6 +80,10 @@
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.GrpcClient/Program.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" />
+        <option value="$PROJECT_DIR$/deploy/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/dockerfile" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/RequsetMerchResponce.cs" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj" />
       </list>
     </option>
   </component>
@@ -204,7 +212,11 @@
       <workItem from="1635242267471" duration="1790000" />
       <workItem from="1635244087282" duration="1781000" />
       <workItem from="1635245905851" duration="1769000" />
-      <workItem from="1635247716616" duration="1064000" />
+      <workItem from="1635247716616" duration="1128000" />
+      <workItem from="1635401568666" duration="1710000" />
+      <workItem from="1635403337066" duration="841000" />
+      <workItem from="1635424701974" duration="2448000" />
+      <workItem from="1635427184898" duration="810000" />
     </task>
     <servers />
   </component>
@@ -329,10 +341,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.4.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state x="552" y="251" key="Rider.ProjectTemplateDialog.Size" timestamp="1635241542153">
+    <state x="552" y="251" key="Rider.ProjectTemplateDialog.Size" timestamp="1635402146148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="251" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635241542153" />
+    <state x="552" y="251" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635402146148" />
     <state x="759" y="209" key="RiderGenerateDialog" timestamp="1635245856808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
