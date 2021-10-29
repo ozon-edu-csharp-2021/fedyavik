@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using OzonEdu.MerchandiseService.Infrastructure.Filters;
 using OzonEdu.MerchandiseService.Infrastructure.Interceptors;
 using OzonEdu.MerchandiseService.Infrastructure.StartupFilters;
+using OzonEdu.MerchandiseService.Infrastructure.Swagger;
 
 namespace OzonEdu.MerchandiseService.Infrastructure.Extensions
 {
@@ -33,6 +34,7 @@ namespace OzonEdu.MerchandiseService.Infrastructure.Extensions
                     var xmlFilePath = Path.Combine(AppContext.BaseDirectory, xmlFileName);
                     options.IncludeXmlComments(xmlFilePath);
                     
+                    options.OperationFilter<HeaderOperationFilter>();
                 });
                 
                 services.AddGrpc(options => options.Interceptors.Add<LoggingInterceptor>());

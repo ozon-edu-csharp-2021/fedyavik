@@ -42,6 +42,9 @@
               <e p="SwaggerStartupFilter.cs" t="Include" />
               <e p="TerminalStartupFilter.cs" t="Include" />
             </e>
+            <e p="Swagger" t="Include">
+              <e p="HeaderOperationFilter.cs" t="Include" />
+            </e>
           </e>
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">

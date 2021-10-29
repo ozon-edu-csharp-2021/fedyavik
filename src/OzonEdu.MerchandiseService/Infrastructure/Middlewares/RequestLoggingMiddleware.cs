@@ -37,10 +37,22 @@ namespace OzonEdu.MerchandiseService.Configuration.Middlewares
                     _logger.LogInformation($"{header.Key} {header.Value}");    
                 }
                 _logger.LogInformation(context.Request.Path.Value);
+                
+                if (context.Request.ContentLength > 0)
+                {
+                    context.Request.EnableBuffering();
+                
+                    var buffer = new byte[context.Request.ContentLength.Value];
+                    await context.Request.Body.ReadAsync(buffer, 0, buffer.Length);
+                    var bodyAsText = Encoding.UTF8.GetString(buffer);
+                    _logger.LogInformation(bodyAsText);
+
+                    context.Request.Body.Position = 0;
+                }
             }
             catch (Exception e)
             {
-                _logger.LogError(e, "Could not log request body");
+                _logger.LogError(e, "Could not log request");
             }
         }
     }

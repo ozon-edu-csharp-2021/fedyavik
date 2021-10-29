@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
@@ -20,10 +21,10 @@ namespace OzonEdu.MerchandiseService.Configuration.Middlewares
         public async Task InvokeAsync(HttpContext context)
         {
             await _next(context);
-            await LogResponce(context);
+            await LogResponse(context);
         }
 
-        public async Task LogResponce(HttpContext context)
+        public async Task LogResponse(HttpContext context)
         {
             if (context.Response.ContentType == grpcContentType)
                 return;
@@ -35,11 +36,22 @@ namespace OzonEdu.MerchandiseService.Configuration.Middlewares
                     _logger.LogInformation($"{header.Key} {header.Value}");    
                 }
                 _logger.LogInformation(context.Request.Path.Value);
+                
+                if (context.Response.ContentLength > 0)
+                {
+                    context.Request.EnableBuffering();
+                
+                    var buffer = new byte[context.Response.ContentLength.Value];
+                    await context.Response.Body.ReadAsync(buffer, 0, buffer.Length);
+                    var bodyAsText = Encoding.UTF8.GetString(buffer);
+                    _logger.LogInformation(bodyAsText);
+
+                    context.Request.Body.Position = 0;
+                }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
+                _logger.LogError(e, "Could not log response");
             }
         }
     }

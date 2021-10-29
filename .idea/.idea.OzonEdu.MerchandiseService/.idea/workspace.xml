@@ -10,12 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4845c9b-bb1c-40c9-b994-924626b0f237" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Models/RequestMerchModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/RequestMerchModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Extensions/HostBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Extensions/HostBuilderExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Configuration/Middlewares/ReadyMiddleware.cs" />
@@ -71,19 +71,21 @@
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/GrpcServices/MerchandiseSerivceGrpc.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Grpc/merchandise-service.proto" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.GrpcClient/OzonEdu.MerchandiseService.GrpcClient.csproj" />
-        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Extensions/HostBuilderExtensions.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Program.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/GrpcServices/MerchandiseGrpcSerivce.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Interceptors/LoggingInterceptor.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.GrpcClient/Program.cs" />
-        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs" />
-        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" />
         <option value="$PROJECT_DIR$/deploy/docker-compose.yml" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/dockerfile" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/RequsetMerchResponce.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Extensions/HostBuilderExtensions.cs" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Swagger/HeaderOperationFilter.cs" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs" />
       </list>
     </option>
   </component>
@@ -216,7 +218,9 @@
       <workItem from="1635401568666" duration="1710000" />
       <workItem from="1635403337066" duration="841000" />
       <workItem from="1635424701974" duration="2448000" />
-      <workItem from="1635427184898" duration="810000" />
+      <workItem from="1635427184898" duration="1147000" />
+      <workItem from="1635428551354" duration="343000" />
+      <workItem from="1635502210201" duration="1745000" />
     </task>
     <servers />
   </component>
@@ -261,86 +265,86 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="504" height="464" key="DebuggerActiveHint/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635246645017" />
-    <state width="1877" height="399" key="GridCell.Tab.0.bottom" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.0.bottom" timestamp="1635503758351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.0.center" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758351" />
+    <state width="1877" height="426" key="GridCell.Tab.0.center" timestamp="1635503758351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.0.left" timestamp="1635247497502">
+    <state width="1877" height="426" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758351" />
+    <state width="1877" height="426" key="GridCell.Tab.0.left" timestamp="1635503758351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497502" />
-    <state width="1877" height="399" key="GridCell.Tab.0.right" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758351" />
+    <state width="1877" height="426" key="GridCell.Tab.0.right" timestamp="1635503758351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.1.bottom" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758351" />
+    <state width="1877" height="426" key="GridCell.Tab.1.bottom" timestamp="1635503760942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.1.center" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503760942" />
+    <state width="1877" height="426" key="GridCell.Tab.1.center" timestamp="1635503760941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.1.left" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503760941" />
+    <state width="1877" height="426" key="GridCell.Tab.1.left" timestamp="1635503760941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.1.right" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503760941" />
+    <state width="1877" height="426" key="GridCell.Tab.1.right" timestamp="1635503760941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.2.bottom" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503760941" />
+    <state width="1877" height="426" key="GridCell.Tab.2.bottom" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.2.center" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.2.center" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.2.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.2.left" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.2.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.2.left" timestamp="1635503758230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.2.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.2.right" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.2.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758230" />
+    <state width="1877" height="426" key="GridCell.Tab.2.right" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.2.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.3.bottom" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.2.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.3.bottom" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.3.center" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.3.center" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.3.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.3.left" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.3.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.3.left" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.3.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.3.right" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.3.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.3.right" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.3.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.4.bottom" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.3.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.4.bottom" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.4.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.4.center" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.4.bottom/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.4.center" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.4.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.4.left" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.4.center/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.4.left" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.4.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
-    <state width="1877" height="399" key="GridCell.Tab.4.right" timestamp="1635247497503">
+    <state width="1877" height="426" key="GridCell.Tab.4.left/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
+    <state width="1877" height="426" key="GridCell.Tab.4.right" timestamp="1635503758231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="399" key="GridCell.Tab.4.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635247497503" />
+    <state width="1877" height="426" key="GridCell.Tab.4.right/0.0.1920.1040/1920.-5.1920.1040@0.0.1920.1040" timestamp="1635503758231" />
     <state x="552" y="251" key="Rider.ProjectTemplateDialog.Size" timestamp="1635402146148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -487,32 +491,6 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Infrastructure\Middlewares\RequestLoggingMiddleware.cs" initialLine="31">
-            <startOffsets>
-              <option value="1003" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1044" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Infrastructure\Middlewares\ResponseLoggingMiddleware.cs" initialLine="29">
-            <startOffsets>
-              <option value="989" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1031" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Services/MerchService.cs</url>
           <line>17</line>
           <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Services\MerchService.cs" initialLine="17">
@@ -578,6 +556,58 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Infrastructure\Middlewares\RequestLoggingMiddleware.cs" initialLine="42">
+            <startOffsets>
+              <option value="1403" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1437" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Infrastructure\Middlewares\ResponseLoggingMiddleware.cs" initialLine="41">
+            <startOffsets>
+              <option value="1411" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1445" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/RequestLoggingMiddleware.cs</url>
+          <line>40</line>
+          <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Infrastructure\Middlewares\RequestLoggingMiddleware.cs" initialLine="40">
+            <startOffsets>
+              <option value="1326" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1364" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Infrastructure/Middlewares/ResponseLoggingMiddleware.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\NOA\Route 256\OzonEdu.MerchandiseService\src\OzonEdu.MerchandiseService\Infrastructure\Middlewares\ResponseLoggingMiddleware.cs" initialLine="39">
+            <startOffsets>
+              <option value="1333" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1372" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
