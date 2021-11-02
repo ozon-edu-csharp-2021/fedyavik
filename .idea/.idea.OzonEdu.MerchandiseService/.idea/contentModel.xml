@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\NOA\Route 256\OzonEdu.MerchandiseService" t="IncludeFlat">
       <e p=".gitignore" t="Include" />
+      <e p="Bounded Context Canvas Template.drawio" t="Include" />
       <e p="common" t="Include" />
       <e p="deploy" t="Include">
         <e p="docker-compose.yml" t="Include" />
@@ -66,6 +67,47 @@
           </e>
           <e p="Startup.cs" t="Include" />
         </e>
+        <e p="OzonEdu.MerchandiseService.Domain" t="IncludeRecursive">
+          <e p="AggregationModels" t="Include">
+            <e p="EmployeeAggregate" t="Include">
+              <e p="Employee.cs" t="Include" />
+              <e p="Fio.cs" t="Include" />
+              <e p="Id.cs" t="Include" />
+              <e p="IEmployeeRepository.cs" t="Include" />
+            </e>
+            <e p="MerchItemAggregate" t="Include">
+              <e p="IMerchItemRepository.cs" t="Include" />
+              <e p="MerchItem.cs" t="Include" />
+              <e p="MerchType.cs" t="Include" />
+              <e p="Name.cs" t="Include" />
+              <e p="Sku.cs" t="Include" />
+            </e>
+            <e p="MerchRequestAggregate" t="Include">
+              <e p="IMerchRequestRepository.cs" t="Include" />
+              <e p="MerchRequest.cs" t="Include" />
+              <e p="RequestNumber.cs" t="Include" />
+              <e p="RequestStatus.cs" t="Include" />
+            </e>
+          </e>
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Contracts" t="Include">
+            <e p="IRepository.cs" t="Include" />
+            <e p="IUnitOfWork.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="Entity.cs" t="Include" />
+            <e p="Enumeration.cs" t="Include" />
+            <e p="ValueObject.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="OzonEdu.MerchandiseService.Domain.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.Domain.csproj" t="IncludeRecursive" />
+        </e>
         <e p="OzonEdu.MerchandiseService.Grpc" t="IncludeRecursive">
           <e p="bin" t="ExcludeRecursive" />
           <e p="merchandise-service.proto" t="Include" />
@@ -118,9 +160,67 @@
           <e p="RequestMerchPostViewModel.cs" t="Include" />
           <e p="RequsetMerchResponce.cs" t="Include" />
         </e>
+        <e p="OzonEdu.MerchandiseService.Infrastructure" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Commands" t="Include">
+            <e p="CreateMerchRequest" t="Include">
+              <e p="CreateMerchRequestCommand.cs" t="Include" />
+            </e>
+            <e p="GiveMerchRequest" t="Include">
+              <e p="GiveMerchRequestStatusCommand.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Exstensions" t="Include">
+            <e p="ServiceCollectionExtensions.cs" t="Include" />
+          </e>
+          <e p="Handlers" t="Include">
+            <e p="MerchRequestAggregate" t="Include">
+              <e p="CreateMerchRequestCommandHandler.cs" t="Include" />
+              <e p="GiveMerchRequestStatusCommandHandler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="OzonEdu.MerchandiseService.Infrastructure.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.Infrastructure.csproj" t="IncludeRecursive" />
+          <e p="Queries" t="Include" />
+          <e p="Stubs" t="Include">
+            <e p="RepoEmployee.cs" t="Include" />
+            <e p="RepoMerchItem.cs" t="Include" />
+            <e p="RepoMerchRequest.cs" t="Include" />
+          </e>
+        </e>
       </e>
-      <e p="tests" t="Include" />
+      <e p="tests" t="Include">
+        <e p="OzonEdu.MerchandiseService.Domain.Tests" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="EmployeeTests.cs" t="Include" />
+          <e p="MerchItemTests.cs" t="Include" />
+          <e p="MerchRequestTests.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="OzonEdu.MerchandiseService.Domain.Tests.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.Domain.Tests.csproj" t="IncludeRecursive" />
+        </e>
+      </e>
     </e>
+    <e p="C:\Users\admin\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\admin\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll" t="Include" />
+    <e p="C:\Users\admin\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\admin\.nuget\packages\microsoft.testplatform.testhost\16.9.4\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\admin\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\admin\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\admin\.nuget\packages\xunit.runner.visualstudio\2.4.3\build\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="C:\Users\admin\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\admin\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_OzonEdu.MerchandiseService.410742741.00" t="ExcludeRecursive" />
   </component>

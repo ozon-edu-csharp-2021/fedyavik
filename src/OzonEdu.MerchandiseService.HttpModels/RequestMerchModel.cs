@@ -2,13 +2,13 @@
 {
     public class RequestMerchModel
     {
-        public RequestMerchModel(long requestId, string itemName)
+        public RequestMerchModel(long requestId, string status)
         {
             RequestId = requestId;
-            ItemName = itemName;
+            Status = status;
         }
 
         public long RequestId { get; }
-        public string ItemName { get; }
+        public string Status { get; }
     }
 }

@@ -10,13 +10,13 @@ namespace OzonEdu.MerchandiseService.Services
     {
         private List<RequestMerchModel> RequestMerchModels = new List<RequestMerchModel>()
         {
-            new RequestMerchModel(1, "test")
+            new RequestMerchModel(1, "")
         };
 
         public Task<RequestMerchModel> RequestMerch(string merchName, CancellationToken token)
         {
             var requestId = RequestMerchModels.Max(x => x.RequestId) + 1;
-            var newMerchRequest = new RequestMerchModel(requestId, merchName);
+            var newMerchRequest = new RequestMerchModel(requestId, "");
             RequestMerchModels.Add(newMerchRequest);
             return Task.FromResult(newMerchRequest);
         }

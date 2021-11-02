@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OzonEdu.MerchandiseService.GrpcServices;
 using OzonEdu.MerchandiseService.HttpClients;
+using OzonEdu.MerchandiseService.Infrastructure.Exstensions;
 using OzonEdu.MerchandiseService.Services;
 
 namespace OzonEdu.MerchandiseService
@@ -21,6 +22,7 @@ namespace OzonEdu.MerchandiseService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IMerchService, MerchService>();
+            services.AddInfrastructureServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
