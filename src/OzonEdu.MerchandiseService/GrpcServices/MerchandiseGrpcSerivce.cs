@@ -19,7 +19,6 @@ namespace OzonEdu.MerchandiseService.GrpcServices
             var merchItem = await _merchService.RequestMerch(request.ItemName, context.CancellationToken);
             return new MerchItemResponse
             {
-                ItemName = merchItem.ItemName,
                 RequestId = merchItem.RequestId
             };
         }
@@ -29,7 +28,6 @@ namespace OzonEdu.MerchandiseService.GrpcServices
             var merchItem = await _merchService.GetIssuingMerchInfo(request.RequestId, context.CancellationToken);
             return new MerchItemResponse
             {
-                ItemName = merchItem.ItemName,
                 RequestId = merchItem.RequestId
             };
         }

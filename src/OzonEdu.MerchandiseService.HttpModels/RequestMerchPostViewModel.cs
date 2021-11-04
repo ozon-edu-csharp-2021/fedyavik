@@ -2,6 +2,7 @@
 {
     public class RequestMerchPostViewModel
     {
-        public string ItemName { get; set; }
+        public long Sku { get; }
+        public long EmployeeId { get; }
     }
 }

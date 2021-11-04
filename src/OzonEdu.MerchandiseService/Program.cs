@@ -1,6 +1,5 @@
 using System.Net;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Hosting;
 using OzonEdu.MerchandiseService.Infrastructure.Extensions;
 
