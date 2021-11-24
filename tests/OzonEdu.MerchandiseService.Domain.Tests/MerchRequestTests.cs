@@ -18,6 +18,7 @@ namespace OzonEdu.MerchandiseService.Domain.Tests
             var name = "Big pen";
             var merchType = MerchType.Pen;
             var merchItem = new MerchItem(
+                new Id(0), 
                 new Sku(sku), 
                 new Name(name), 
                 merchType);
@@ -55,6 +56,7 @@ namespace OzonEdu.MerchandiseService.Domain.Tests
             var name = "Big pen";
             var merchType = MerchType.Pen;
             var merchItem = new MerchItem(
+                new Id(0), 
                 new Sku(sku), 
                 new Name(name), 
                 merchType);
@@ -94,6 +96,7 @@ namespace OzonEdu.MerchandiseService.Domain.Tests
             var name = "Big pen";
             var merchType = MerchType.Pen;
             var merchItem = new MerchItem(
+                new Id(0), 
                 new Sku(sku), 
                 new Name(name), 
                 merchType);
@@ -130,6 +133,7 @@ namespace OzonEdu.MerchandiseService.Domain.Tests
             var name = "Big pen";
             var merchType = MerchType.Pen;
             var merchItem = new MerchItem(
+                new Id(0), 
                 new Sku(sku), 
                 new Name(name), 
                 merchType);

@@ -11,7 +11,7 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
-      <Protobuf Include="merchandise-service.proto" GrpServices="Both"/>
+      <Protobuf Include="merchandise-service.proto" GrpServices="Both" />
     </ItemGroup>
 
 </Project>

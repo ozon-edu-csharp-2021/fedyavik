@@ -8,6 +8,8 @@
       <e p="deploy" t="Include">
         <e p="docker-compose.yml" t="Include" />
       </e>
+      <e p="dockerfile" t="Include" />
+      <e p="entrypoint.sh" t="Include" />
       <e p="OzonEdu.MerchandiseService.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="src" t="Include">
@@ -18,7 +20,6 @@
           <e p="Controllers" t="Include">
             <e p="MerchController.cs" t="Include" />
           </e>
-          <e p="dockerfile" t="Include" />
           <e p="GrpcServices" t="Include">
             <e p="MerchandiseGrpcSerivce.cs" t="Include" />
           </e>
@@ -170,6 +171,9 @@
               <e p="GiveMerchRequestStatusCommand.cs" t="Include" />
             </e>
           </e>
+          <e p="Configuration" t="Include">
+            <e p="DatabaseConnectionOptions.cs" t="Include" />
+          </e>
           <e p="Exstensions" t="Include">
             <e p="ServiceCollectionExtensions.cs" t="Include" />
           </e>
@@ -188,11 +192,59 @@
           </e>
           <e p="OzonEdu.MerchandiseService.Infrastructure.csproj" t="IncludeRecursive" />
           <e p="Queries" t="Include" />
+          <e p="Repositories" t="Include">
+            <e p="Implementation" t="Include">
+              <e p="EmployeeRepository.cs" t="Include" />
+              <e p="MerchItemRepository.cs" t="Include" />
+              <e p="MerchRequestRepository.cs" t="Include" />
+            </e>
+            <e p="Infrastructure" t="Include">
+              <e p="ChangeTracker.cs" t="Include" />
+              <e p="Exceptions" t="Include">
+                <e p="NoActiveTransactionStartedException.cs" t="Include" />
+              </e>
+              <e p="Interfaces" t="Include">
+                <e p="IChangeTracker.cs" t="Include" />
+                <e p="IDbConnectionFactory.cs" t="Include" />
+              </e>
+              <e p="NpgsqlConnectionFactory.cs" t="Include" />
+              <e p="UnitOfWork.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="Employee.cs" t="Include" />
+              <e p="MerchItem.cs" t="Include" />
+              <e p="MerchRequest.cs" t="Include" />
+              <e p="MerchRequestStatus.cs" t="Include" />
+              <e p="MerchType.cs" t="Include" />
+            </e>
+          </e>
           <e p="Stubs" t="Include">
             <e p="RepoEmployee.cs" t="Include" />
             <e p="RepoMerchItem.cs" t="Include" />
             <e p="RepoMerchRequest.cs" t="Include" />
           </e>
+        </e>
+        <e p="OzonEdu.MerchandiseService.Migrator" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Migrations" t="Include">
+            <e p="0001_CreateEmployeeTable.cs" t="Include" />
+            <e p="0002_CreateMerchItemTable.cs" t="Include" />
+            <e p="0003_CreateMerchTypeTable.cs" t="Include" />
+            <e p="0004_CreateRequestStatusesTable.cs" t="Include" />
+            <e p="0005_CreateMerchRequestsTable.cs" t="Include" />
+            <e p="0006_FillDictionaries.cs" t="Include" />
+            <e p="0007_FillData.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net5.0" t="Include">
+                <e p="OzonEdu.MerchandiseService.Migrator.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="OzonEdu.MerchandiseService.Migrator.csproj" t="IncludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Temp" t="Include" />
         </e>
       </e>
       <e p="tests" t="Include">
