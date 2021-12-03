@@ -12,26 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4845c9b-bb1c-40c9-b994-924626b0f237" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OzonEdu.MerchandiseService/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" beforeDir="false" afterPath="$PROJECT_DIR$/OzonEdu.MerchandiseService.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/AggregationModels/MerchItemAggregate/MerchItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/AggregationModels/MerchItemAggregate/MerchItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/Contracts/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/Contracts/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/Contracts/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/Contracts/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/Models/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/Models/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Grpc/OzonEdu.MerchandiseService.Grpc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Grpc/OzonEdu.MerchandiseService.Grpc.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/RequestMerchPostViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/RequestMerchPostViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Exstensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Exstensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Handlers/MerchRequestAggregate/CreateMerchRequestCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Handlers/MerchRequestAggregate/CreateMerchRequestCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/OzonEdu.MerchandiseService.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/OzonEdu.MerchandiseService.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Stubs/RepoMerchItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Stubs/RepoMerchItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/OzonEdu.MerchandiseService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/OzonEdu.MerchandiseService.Domain.Tests/MerchItemTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/OzonEdu.MerchandiseService.Domain.Tests/MerchItemTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/OzonEdu.MerchandiseService.Domain.Tests/MerchRequestTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/OzonEdu.MerchandiseService.Domain.Tests/MerchRequestTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +51,6 @@
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Migrator/OzonEdu.MerchandiseService.Migrator.csproj" />
         <option value="$PROJECT_DIR$/entrypoint.sh" />
         <option value="$PROJECT_DIR$/dockerfile" />
-        <option value="$PROJECT_DIR$/deploy/docker-compose.yml" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Migrator/Migrations/0001_CreateEmployeeTable.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Migrator/Migrations/0003_CreateMerchTypeTable.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Migrator/Migrations/0002_CreateMerchItemTable.cs" />
@@ -83,8 +64,6 @@
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/OzonEdu.MerchandiseService.Infrastructure.csproj" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Repositories/Infrastructure/Interfaces/IDbConnectionFactory.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Repositories/Infrastructure/NpgsqlConnectionFactory.cs" />
-        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Migrator/Program.cs" />
-        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/appsettings.json" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.HttpModels/RequestMerchPostViewModel.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Repositories/Models/Employee.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Repositories/Infrastructure/Exceptions/NoActiveTransactionStartedException.cs" />
@@ -109,6 +88,9 @@
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Domain/AggregationModels/MerchItemAggregate/MerchItem.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Handlers/MerchRequestAggregate/CreateMerchRequestCommandHandler.cs" />
         <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Infrastructure/Repositories/Implementation/MerchRequestRepository.cs" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService.Migrator/Program.cs" />
+        <option value="$PROJECT_DIR$/src/OzonEdu.MerchandiseService/appsettings.json" />
+        <option value="$PROJECT_DIR$/deploy/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -379,6 +361,8 @@
       <workItem from="1637745718232" duration="1779000" />
       <workItem from="1637747526513" duration="1780000" />
       <workItem from="1637749334687" duration="1779000" />
+      <workItem from="1637756246166" duration="750000" />
+      <workItem from="1638534608673" duration="1623000" />
     </task>
     <servers />
   </component>
