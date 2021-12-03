@@ -1,4 +1,5 @@
 using System;
+using OzonEdu.MerchandiseService.Domain.AggregationModels.EmployeeAggregate;
 using OzonEdu.MerchandiseService.Domain.AggregationModels.MerchItemAggregate;
 using Xunit;
 
@@ -16,6 +17,7 @@ namespace OzonEdu.MerchandiseService.Domain.Tests
             
             //Act
             var merchItem = new MerchItem(
+                new Id(0), 
                 new Sku(sku), 
                 new Name(name), 
                 merchType);
@@ -35,6 +37,7 @@ namespace OzonEdu.MerchandiseService.Domain.Tests
             var merchType = MerchType.Pen;
             
             var merchItem = new MerchItem(
+                new Id(0), 
                 new Sku(sku), 
                 new Name(name), 
                 merchType);
@@ -57,6 +60,7 @@ namespace OzonEdu.MerchandiseService.Domain.Tests
             var merchType = MerchType.Pen;
             
             var merchItem = new MerchItem(
+                new Id(0), 
                 new Sku(sku), 
                 new Name(name), 
                 merchType);

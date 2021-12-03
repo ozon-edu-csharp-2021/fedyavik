@@ -2,7 +2,7 @@
 
 services:
   merchandise-service:
-    build: ../src/OzonEdu.MerchandiseService/.
+    build: ../.
     hostname: merchandise_service
     ports:
       - "5000:80"
@@ -11,6 +11,9 @@ services:
       - emailing-service
       - employees-service 
       - supply-service 
+      - merchandise-service-db
+    environment:
+      DatabaseConnectionOptions__ConnectionString: "Host=host.docker.internal;Port=5426;Database=merchandise-service;Username=postgres;Password=merchandiseServicePas"
   stock-api:
     image: 'ghcr.io/ozon-edu-csharp-2021/stock-api:main'
     hostname: stock_api
@@ -34,3 +37,12 @@ services:
     ports:
       - "8085:80"
       - "8086:443"
+  merchandise-service-db:
+    image: postgres:latest
+    ports:
+      - "5426:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: merchandiseServicePas
+      POSTGRES_DB: merchandise-service
+    command: "-c log_statement=all"

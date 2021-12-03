@@ -11,21 +11,25 @@ namespace OzonEdu.MerchandiseService.Infrastructure.Handlers.MerchRequestAggrega
 {
     public class CreateMerchRequestCommandHandler: IRequestHandler<CreateMerchRequestCommand, long>
     {
-        public readonly IMerchRequestRepository _merchRequestRepository;
-        public readonly IEmployeeRepository _employeeRepository;
-        public readonly IMerchItemRepository _merchItemRepository;
-
+        private readonly IMerchRequestRepository _merchRequestRepository;
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IMerchItemRepository _merchItemRepository;
+        private readonly IUnitOfWork _unitOfWork;
+        
         public CreateMerchRequestCommandHandler(IMerchRequestRepository merchRepository,
             IEmployeeRepository employeeRepository,
-            IMerchItemRepository merchItemRepository)
+            IMerchItemRepository merchItemRepository,
+            IUnitOfWork unitOfWork)
         {
             _merchRequestRepository = merchRepository;
             _employeeRepository = employeeRepository;
             _merchItemRepository = merchItemRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<long> Handle(CreateMerchRequestCommand request, CancellationToken cancellationToken)
         {
+            await _unitOfWork.StartTransaction(cancellationToken);
             var employee = await _employeeRepository.FindByIdAsync(request.EmployeeId, cancellationToken);
             if (employee is null)
                 throw new Exception($"Employee not found by id {request.EmployeeId}");
@@ -45,10 +49,10 @@ namespace OzonEdu.MerchandiseService.Infrastructure.Handlers.MerchRequestAggrega
                 employee
             );
 
-            var result = await _merchRequestRepository.CreateAsync(newMerchRequest, cancellationToken);
-            //await _merchRequestRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
+            var createResult = await _merchRequestRepository.CreateAsync(newMerchRequest, cancellationToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-            return result.RequestNumber.Value;
+            return createResult.Id;
         }
     }
 }
