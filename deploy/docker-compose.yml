@@ -19,24 +19,76 @@ services:
     hostname: stock_api
     ports:
       - "8080:80"
+    environment:
+      DatabaseConnectionOptions__ConnectionString: "Host=host.docker.internal;Port=5427;Database=stock-api;Username=postgres;Password=stockApiPassword"
+    depends_on:
+      - stock-api-db
+  stock-api-db:
+    image: postgres:latest
+    ports:
+      - "5427:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: stockApiPassword
+      POSTGRES_DB: stock-api
+    command: "-c log_statement=all"
   emailing-service:
     image: 'ghcr.io/ozon-edu-csharp-2021/emailing-service:main'
     hostname: emailing_service
     ports:
       - "8081:80"
       - "8082:443"
+    environment:
+      DatabaseConnectionOptions__ConnectionString: "Host=host.docker.internal;Port=5429;Database=emailing-service;Username=postgres;Password=emailingServicePassword"
+    depends_on:
+      - emailing-service-db
+  emailing-service-db:
+    image: postgres:latest
+    ports:
+      - "5429:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: emailingServicePassword
+      POSTGRES_DB: emailing-service
+    command: "-c log_statement=all"
   employees-service:
     image: 'ghcr.io/ozon-edu-csharp-2021/employees-service:main'
     hostname: employees_service
     ports:
       - "8083:80"
       - "8084:443"
+  environment:
+    DatabaseConnectionOptions__ConnectionString: "Host=host.docker.internal;Port=5430;Database=employees-service;Username=postgres;Password=employeesServicePassword"
+  depends_on:
+    - employees-service-db
+  employees-service-db:
+    image: postgres:latest
+    ports:
+      - "5430:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: employeesServicePassword
+      POSTGRES_DB: employees-service
+    command: "-c log_statement=all"
   supply-service:
     image: 'ghcr.io/ozon-edu-csharp-2021/supply-service:main'
     hostname: supply_service
     ports:
       - "8085:80"
       - "8086:443"
+    environment:
+      DatabaseConnectionOptions__ConnectionString: "Host=host.docker.internal;Port=5428;Database=supply-service;Username=postgres;Password=supplyServicePassword"
+    depends_on:
+      - supply-service-db
+  supply-service-db:
+    image: postgres:latest
+    ports:
+      - "5428:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: supplyServicePassword
+      POSTGRES_DB: supply-service
+    command: "-c log_statement=all"
   merchandise-service-db:
     image: postgres:latest
     ports:
